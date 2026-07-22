@@ -195,8 +195,6 @@ public static class DatabaseSettings
 }
 ```
 
-> Esta configuración se utiliza únicamente para el entorno local de evaluación. En un ambiente productivo no se debe utilizar el usuario `root`, una contraseña vacía ni almacenar credenciales reales dentro del código fuente.
-
 ---
 
 ## Preparación de la base de datos
