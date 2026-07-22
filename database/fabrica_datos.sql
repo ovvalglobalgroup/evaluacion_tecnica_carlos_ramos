@@ -1,5 +1,5 @@
 -- Redirigimos la ejecucón de los script hacia la base de datos
-USE banco_desarrollo;
+USE banco_codesarrollo;
 
 
 -- Registramos los tipos de garantía que podrán asociarse a los créditos

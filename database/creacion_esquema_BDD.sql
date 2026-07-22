@@ -1,9 +1,9 @@
 -- Creación de la base de datos
-CREATE DATABASE IF NOT EXISTS banco_desarrollo
+CREATE DATABASE IF NOT EXISTS banco_codesarrollo
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE banco_desarrollo;
+USE banco_codesarrollo;
 
 
 -- Creación de la tabla de tipos de garantía
