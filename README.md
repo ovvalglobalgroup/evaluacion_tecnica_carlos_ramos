@@ -1,5 +1,5 @@
 "# evaluacion_tecnica_carlos_ramos" 
-# Evaluación Técnica — Analista de Aplicaciones de Software
+# Evaluación Técnica - Analista de Aplicaciones de Software
 
 <p align="center">
   <img src="src/EvaluacionTecnica.WinForms/Images/logo_bdd.png"
@@ -7,7 +7,7 @@
        width="300">
 </p>
 
-Aplicación de escritorio desarrollada con **C#**, **.NET 8**, **Windows Forms**, **LINQ** y **MariaDB**, creada para cumplir los requerimientos de una evaluación técnica de desarrollo de software.
+Aplicación de escritorio desarrollada con **C#**, **.NET 8**, **Windows Forms**, **LINQ** y **MariaDB**, creada para cumplir los requerimientos de la evaluación técnica indicada para el cargo de analista desarrollo de software.
 
 El proyecto incluye dos componentes principales:
 
@@ -131,22 +131,6 @@ banco_desarrollo_net/
         ├── EvaluacionTecnica.WinForms.csproj
         └── Program.cs
 ```
-
-### Archivos que no deben publicarse
-
-Aunque estas carpetas y archivos pueden aparecer localmente después de compilar el proyecto, no deben subirse al repositorio:
-
-```text
-.vs/
-bin/
-obj/
-*.user
-*.suo
-```
-
-El archivo `.gitignore` se encarga de excluirlos.
-
-> Se recomienda utilizar nombres de archivo sin tildes para evitar problemas con rutas o enlaces. Por ejemplo, usar `probar-conexion.jpg` en lugar de `probar-conexión.jpg`.
 
 ---
 
