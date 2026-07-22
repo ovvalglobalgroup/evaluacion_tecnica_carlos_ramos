@@ -94,7 +94,7 @@ La aplicación incluye una sección independiente para:
 La estructura publicada en GitHub tiene la siguiente estructura:
 
 ```text
-banco_desarrollo_net/
+banco_codesarrollo_net/
 ├── .gitignore
 ├── README.md
 ├── EvaluacionTecnica.sln
@@ -167,7 +167,7 @@ La aplicación utiliza la siguiente configuración local:
 ```text
 Servidor: 127.0.0.1
 Puerto: 3306
-Base de datos: banco_desarrollo
+Base de datos: banco_codesarrollo
 Usuario: root
 Contraseña: 
 ```
@@ -188,7 +188,7 @@ public static class DatabaseSettings
 {
     public const string Server = "127.0.0.1";
     public const uint Port = 3306;
-    public const string Database = "banco_desarrollo";
+    public const string Database = "banco_codesarrollo";
     public const string UserId = "root";
     public const string Password = "";
 }
