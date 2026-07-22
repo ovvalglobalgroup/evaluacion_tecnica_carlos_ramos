@@ -33,7 +33,6 @@ El proyecto incluye dos componentes principales:
 - Generación automática del identificador del alumno.
 - Actualización dinámica de los contadores de alumnos registrados, activos y seleccionados.
 
-> Los alumnos se administran en memoria mediante una colección `List<Alumno>`, de acuerdo con el requerimiento de agregar elementos al `DataGridView`. La evaluación no solicita persistir alumnos en MariaDB.
 
 ### Consulta de capital vencido
 
@@ -92,7 +91,7 @@ La aplicación incluye una sección independiente para:
 
 ## Estructura del repositorio
 
-La estructura publicada en GitHub debe quedar de la siguiente manera:
+La estructura publicada en GitHub tiene la siguiente estructura:
 
 ```text
 banco_desarrollo_net/
@@ -170,7 +169,7 @@ Servidor: 127.0.0.1
 Puerto: 3306
 Base de datos: banco_desarrollo
 Usuario: root
-Contraseña: vacía
+Contraseña: 
 ```
 
 Esta configuración se encuentra en:

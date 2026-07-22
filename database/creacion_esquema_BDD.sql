@@ -45,9 +45,12 @@ CREATE TABLE IF NOT EXISTS cuota_credito
     numero_credito BIGINT UNSIGNED NOT NULL,
     numero_cuota INT UNSIGNED NOT NULL,
     fecha_vencimiento DATE NOT NULL,
-    capital DECIMAL(14, 2) NOT NULL,
-    interes DECIMAL(14, 2) NOT NULL DEFAULT 0.00,
-    mora DECIMAL(14, 2) NOT NULL DEFAULT 0.00,
+
+    -- UNSIGNED impide almacenar valores negativos.
+    capital DECIMAL(14, 2) UNSIGNED NOT NULL,
+    interes DECIMAL(14, 2) UNSIGNED NOT NULL DEFAULT 0.00,
+    mora DECIMAL(14, 2) UNSIGNED NOT NULL DEFAULT 0.00,
+
     pagada BOOLEAN NOT NULL DEFAULT FALSE,
     sucursal INT UNSIGNED NOT NULL,
 
@@ -58,9 +61,6 @@ CREATE TABLE IF NOT EXISTS cuota_credito
         FOREIGN KEY (numero_credito, sucursal)
         REFERENCES credito (numero_credito, sucursal)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
+        ON DELETE RESTRICT
 
-    CONSTRAINT chk_cuota_capital CHECK (capital >= 0),
-    CONSTRAINT chk_cuota_interes CHECK (interes >= 0),
-    CONSTRAINT chk_cuota_mora CHECK (mora >= 0)
 ) ENGINE = InnoDB;
